@@ -1,5 +1,7 @@
 <view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
+  <text class="textStyle">至此告别换电</text>
+  <view>
+    <button>拼团租赁</button>
+    <button>拼团购买</button>
   </view>
 </view>

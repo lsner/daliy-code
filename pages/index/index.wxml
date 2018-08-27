@@ -2,7 +2,7 @@
 <view class="container">
     <view wx:if="{{loadingHidden}}">
         <view class="card">
-            <navigator url="../index/index">立即拼团</navigator>
+            <navigator open-type="redirect" url="/pages/pintuan-main/pintuan-main">立即拼团</navigator>
         </view>
         <view class="card">
             <navigator url="../index/index">我要购买</navigator>

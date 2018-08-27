@@ -13,6 +13,11 @@ Page({
                 loadingHidden: true
             })
         }, 2000);
+
+        //显示分享转发
+        wx.showShareMenu({
+            withShareTicket: true
+        })
     },
 
     onScanClick: function () {
@@ -20,7 +25,7 @@ Page({
         wx.scanCode({
             onlyFromCamera: true,
             success: (res) => {
-                console.log("lsner----res",res)
+                console.log("lsner----res", res)
                 if (res.result) {
                     wx.navigateTo({
                         url: '/' + res.result

@@ -6,7 +6,8 @@
     "pages/my/index",
     "pages/details/index",
     "pages/brand/index",
-    "pages/list/index"
+    "pages/list/index",
+    "pages/pintuan-main/pintuan-main"
   ],
   "window": {
     "backgroundTextStyle": "light",
