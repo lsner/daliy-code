@@ -1,7 +1,7 @@
 <view class="container">
   <text class="textStyle">至此告别换电</text>
   <view>
-    <button>拼团租赁</button>
+    <button bindtap="onRentClick">拼团租赁</button>
     <button>拼团购买</button>
   </view>
 </view>

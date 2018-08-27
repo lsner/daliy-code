@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- 配送方式 -->
+  <view class="section">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"  />
+        <text>{{item.value}}</text>
+      </label>
+    </radio-group>
+  </view>
+  <!-- 日期选择 -->
+  <view class="section">
+    <view class="section__title">日期选择器</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="onDateChange">
+      <view class="picker">当前选择: {{date}}</view>
+    </picker>
+  </view>
+  <view>
+    <button bindtap="onPay">立即支付</button>
+  </view>
+</view>
