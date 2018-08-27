@@ -20,8 +20,12 @@ Page({
         wx.scanCode({
             onlyFromCamera: true,
             success: (res) => {
-                console.log(res)
-                console.assert("haha")
+                console.log("lsner----res",res)
+                if (res.result) {
+                    wx.navigateTo({
+                        url: '/' + res.result
+                    });
+                }
             }
         })
     }
