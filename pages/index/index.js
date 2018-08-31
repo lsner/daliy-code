@@ -7,17 +7,26 @@ Page({
 
     onLoad: function () {
         var that = this
-        setTimeout(function () {
-            console.log('========lsner======')
-            that.setData({
-                loadingHidden: true
-            })
-        }, 2000);
-
         //显示分享转发
         wx.showShareMenu({
             withShareTicket: true
         })
+        //加载数据
+        wx.request({
+            url: 'https://www.easy-mock.com/mock/5b2c99e2195e43541145771d/getInfo/info/detail',
+            method: 'GET',
+            data: {},
+            header: {
+                'Accept': 'application/json'
+            },
+            success: function (res) {
+                console.log("--测试easy mock的时候到了---", res)
+                that.setData({
+                    loadingHidden: true
+                })
+            }
+        })
+
     },
 
     onScanClick: function () {
