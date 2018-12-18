@@ -1,7 +1,7 @@
 <!-- index.wxml -->
 <view class="container">
     <view wx:if="{{loadingHidden}}">
-        <view class="card">
+        <!-- <view class="card">
             <navigator open-type="redirect" url="/pages/pintuan-main/pintuan-main">立即拼团</navigator>
         </view>
         <view class="card">
@@ -10,7 +10,8 @@
         <view class="card">
             <navigator url="../index/index">我要租赁</navigator>
         </view>
-        <button class="qrcode-btn" bindtap="onScanClick">扫一扫</button>
+        <button class="qrcode-btn" bindtap="onScanClick">扫一扫</button> -->
+        <basic-audio-player inner-text="Some text" />
     </view>
     <view wx:else>
         <loading hidden="{{loadingHidden}}">加载中...</loading>

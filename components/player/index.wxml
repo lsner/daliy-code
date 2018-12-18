@@ -1,0 +1,6 @@
+<view class="container">
+  <text class="" selectable="false" space="false" decode="false">
+    这是我的声音组件
+    {{innerText}}
+  </text>
+</view>

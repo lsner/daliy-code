@@ -13,7 +13,7 @@ Page({
         })
         //加载数据
         wx.request({
-            url: 'https://www.easy-mock.com/mock/5b2c99e2195e43541145771d/getInfo/info/detail',
+            url: 'https://www.easy-mock.com/mock/5b2c99e2195e43541145771d/info/detail',
             method: 'GET',
             data: {},
             header: {

@@ -1,1 +1,5 @@
-{}
+{
+    "usingComponents": {
+        "basic-audio-player": "/components/player/index"
+    }
+}
